@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExBox</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="siteLogo2">
+            <img src="logo2.jpg" alt="ExBox">
+        </a>
+        <nav>
+            <a href="#exchange">Exchange</a>
+            <a href="#rates">Exchange Rates</a>
+            <a href="#support">Support</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Раздел обмена валют -->
+        <section id="exchange">
+            <h2>Currency Exchange</h2>
+            <form id="exchangeForm">
+                <!-- Выбор валюты, с которой происходит обмен -->
+                <label for="fromCurrency">From Currency:</label>
+                <select id="fromCurrency" required>
+                    <option value="usdt">USDT (TRC20)</option>
+                    <option value="matic">MATIC</option>
+                    <option value="eth">ETH</option>
+                    <option value="ltc">LTC</option>
+                    <option value="xrp">XRP</option>
+                    <option value="sol">SOL</option>
+                    <option value="xtz">XTZ</option>
+                    <option value="btc">BTC</option>
+                </select>
+                <!-- Выбор валюты, на которую происходит обмен -->
+                <label for="toCurrency">To Currency:</label>
+                <select id="toCurrency" required>
+                    <option value="usdt">USDT (TRC20)</option>
+                    <option value="matic">MATIC</option>
+                    <option value="eth">ETH</option>
+                    <option value="ltc">LTC</option>
+                    <option value="xrp">XRP</option>
+                    <option value="sol">SOL</option>
+                    <option value="xtz">XTZ</option>
+                    <option value="btc">BTC</option>
+                </select>
+                <!-- Ввод суммы для обмена -->
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" required>
+                <!-- Поле для отображения результата обмена -->
+                <label for="result">You will receive:</label>
+                <input type="text" id="result" readonly>
+                <!-- Ввод криптокошелька -->
+                <label for="wallet">Crypto Wallet:</label>
+                <input type="text" id="wallet" required>
+                <!-- Ввод email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <!-- Кнопка для отправки формы обмена -->
+                <button type="submit">Exchange</button>
+            </form>
+        </section>
+
+        <!-- Раздел курсов валют -->
+        <section id="rates">
+            <h2>Exchange Rates</h2>
+            <div id="ratesContainer">
+                <!-- Курсы валют будут загружаться здесь -->
+            </div>
+        </section>
+
+        <!-- Раздел поддержки пользователей -->
+        <section id="support">
+            <h2>Support</h2>
+            <p>If you have any questions, contact us at:</p>
+            <p>Gmail: ExBoxSup@gmail.com</p>
+            <section id="support">
+            <button id="telegramButton">
+                <img src="telegram.png" alt="Telegram" class="icon"> Contact on Telegram
+    </main>
+
+    <!-- Подвал страницы -->
+    <footer>
+        <a href="https://www.bestchange.ru/"><img src="BestChange.png" alt="BestChange Logo"></a>
+        <p>&copy; 2024 Exchange. All rights reserved.</p>
+    </footer>
+
+    <!-- Подключение JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

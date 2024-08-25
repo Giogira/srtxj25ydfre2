@@ -1,0 +1,273 @@
+/* Подключение шрифта Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Стили для тела документа */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Стили для заголовка */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #00ccff;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #00ccff;
+}
+
+/* Стили для навигационных ссылок */
+nav a {
+    color: #00ccff;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+/* Стили для основного содержимого */
+main {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+/* Стили для секций */
+section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Стили для заголовков секций */
+h2 {
+    margin-top: 0;
+    color: #00ccff;
+}
+
+/* Стили для формы */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для меток */
+label {
+    margin-top: 1rem;
+    color: #00ccff;
+}
+
+/* Стили для полей ввода и кнопок */
+input, select, button {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+input, select {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+}
+
+button {
+    background-color: #00ccff;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0099cc;
+}
+
+/* Стили для результата обмена */
+#result {
+    margin-top: 1rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #000;
+}
+
+/* Стили для подвала */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #00ccff;
+    position: position;
+    bottom: 0;
+    border-top: 2px solid #00ccff;
+}
+
+/* Стили для полей формы, если они не валидны */
+input:invalid, select:invalid {
+    border-color: red;
+}
+
+input:invalid::placeholder {
+    color: red;
+}
+
+input:invalid:focus, select:invalid:focus {
+    outline-color: red;
+}
+
+/* Стили для всплывающего окна */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d3d3d3; /* Светло-серый фон */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    width: calc(100% - 2rem); /* Растягиваем всплывающее окно на всю ширину с отступами по бокам */
+    max-width: 600px; /* Ограничиваем максимальную ширину */
+}
+
+.popup h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #000; /* Черный цвет текста */
+}
+
+.popup form {
+    text-align: center;
+    color: #000; /* Черный цвет текста */
+}
+
+.popup form input {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 0 auto 1rem;
+    color: #000; /* Черный цвет текста */
+}
+
+.popup form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #000; /* Черный цвет текста */
+}
+
+.popup button {
+    display: none; /* Скрываем кнопку Pay Now */
+}
+
+/* Логотип сайта */
+#siteLogo {
+    width: 20px;
+    height: auto;
+    float: left;
+    margin-right: 1rem;
+}
+
+.crypto-select {
+    padding-left: 40px;
+    background-position: left 10px center;
+    background-repeat: no-repeat;
+}
+
+/* Стили для кнопки Telegram */
+#telegramButton {
+    display: flex;
+    align-items: center;
+    background-color: #0088cc;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#telegramButton:hover {
+    background-color: #006699;
+}
+
+#telegramButton .icon {
+    width: 20px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+
+/* Стили для шапки */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#siteLogo2 {
+    display: flex;
+    align-items: center;
+}
+
+#siteLogo2 img {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.crypto-select {
+    padding-left: 40px;
+    background-position: left 10px center;
+    background-repeat: no-repeat;
+}
+
+
+/* Стили для кнопок Telegram и BestChange */
+#telegramButton, #bestChangeButton {
+    display: flex;
+    align-items: center;
+    background-color: #0088cc;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 10px;  /* Добавлено, чтобы кнопки не слипались */
+}
+
+#telegramButton .icon, #bestChangeButton .icon {
+    width: 20px;
+    height: auto;
+    margin-right: 0.5rem;
+}
